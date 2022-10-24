@@ -87,6 +87,7 @@ ul {
 .main-nav {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .site-nav {
   display: flex;
@@ -98,23 +99,33 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  position: relative;
 }
 .site-nav .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 31px;
+  
 }
 
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
+  position: relative;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  border-radius: 2px; 
+
 }
 .site-nav .link.current {
   color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  border-radius: 2px;
+  position: relative;
+
 }
 
 /* auth */
